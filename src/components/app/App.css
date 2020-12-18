@@ -1,10 +1,14 @@
 .App {
   text-align: center;
+  margin: 50px auto;
+  max-width: 1000px;
+  background-color: #eaf5fc;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 4rem;
   pointer-events: none;
+  /* align-self: center; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,13 +19,16 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 8vmin;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
   color: white;
+}
+
+.App-header h1 {
+  font-size: calc(10px + 3vmin);
+
 }
 
 .App-link {

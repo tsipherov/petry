@@ -1,0 +1,19 @@
+.app-header {
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 8vmin;
+}
+
+.app-header h1 {
+  /* width: 150px;
+  height: 150px; */
+  font-size: 30px;
+}
+
+.app-header h5 {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 0;
+  /* align-self: flex-end; */
+  /* padding-bottom: 5px; */
+}
