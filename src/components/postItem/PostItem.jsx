@@ -25,7 +25,7 @@ class PostItem extends React.Component {
   }
 
   render() {
-    const { label } = this.props;
+    const { label, deleteTodoHandler } = this.props;
     const { important, like } = this.state
 
     let classes = "d-flex justify-content-between app-list-item";
@@ -48,7 +48,8 @@ class PostItem extends React.Component {
             className="btn-star btn-sm">
             <i className="fa fa-star"></i>
           </button>
-          <button type="button" className="btn-trash btn-sm">
+          <button type="button" className="btn-trash btn-sm"
+            onClick={ deleteTodoHandler }>
             <i className="fa fa-trash-o"></i>
           </button>
           <i className="fa fa-heart"></i>

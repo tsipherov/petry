@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState} from 'react'
 import './post-add-form.css'
 
-const PostAddPanel = () => {
+const PostAddPanel = ({ addTodoHandler }) => {
+    
+    const [value, setValue] = useState('')
+
     return (
-        <form className='d-flex bottom-panel'>
+        <form className='d-flex bottom-panel'
+            onSubmit={(e) => {
+                e.preventDefault()
+                console.log(value)
+                addTodoHandler(value)
+                setValue("")
+            }}
+        >
             <input
                 className='form-control new-post-label'
                 type='text'
                 placeholder='Добавить новую запись'
+                value={ value }
+                onChange={ (e)=>setValue(e.target.value)
+                }
             />
             <button
                 type='submit'
